@@ -32,7 +32,12 @@ function App() {
   <Trainer name1="PEter" address1="Glasgow"/>
   <Trainer name1="Tadas" address1="London"/> 
   <Payslip name="Shafeeq" department="IT"address="Manchester" salary="2000"/>*/}
-  <Employees/>
+  <h2>List of Employees working in HR department</h2>
+  <Employees department="HR"/>
+  <br/>
+  <br/>
+  <h2>List of Employees working in IT department</h2>
+  <Employees department="IT"/>
     </>
   );
 }

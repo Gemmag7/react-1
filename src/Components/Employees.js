@@ -1,8 +1,28 @@
+//import TaxCalculator from "./TaxCalculator";
 
+function TaxCalculator(salary){
+    let result =0
+    let tax = 0
+   
+    if (salary <1000){
+        tax = 0;
+    }
+    else{
+        if(salary <2000){
+        tax = salary * 0.15
+        }
+        else{
+            if(salary <3000){
+                tax = salary * 0.21
+            }else{
+                tax =salary * 0.31
+            }
+        }
+    }
 
-function Employees(){
-
-    let data =[2,3,5,6];
+    return tax;
+}
+function Employees(props){
 
     let employees=[
         {
@@ -22,29 +42,48 @@ function Employees(){
             name:"Shafeeq4", 
             salary: 1900,
             department:"HR"
-        }
+        }, 
+        {
+            regNo: 335, 
+            name:"Shafeeq3", 
+            salary: 4300,
+            department:"IT"
+        },
+        {
+            regNo: 145, 
+            name:"Shafeeq5", 
+            salary: 6300,
+            department:"HR"
+        },
         
     ]
     
     return(
         <>
         <table>
+            <tbody>
             <tr>
-                <th>Employee Number</th>
+                <th>Employee No.</th>
                 <th>Name</th>
                 <th>Salary</th>
+                <th>Tax</th>
+                <th>Net Salary</th>
                 <th>Department</th>
             </tr>
             {
-                employees.map( (X) =>
+                employees.filter(emp =>emp.department == props.department).map( emp =>(
                 <tr>
-                    <td>{X.regNo}</td>
-                    <td>{X.name}</td>
-                    <td>{X.salary}</td>
-                    <td>{X.department}</td>
+                    <td>{emp.regNo}</td>
+                    <td>{emp.name}</td>
+                    <td>£{emp.salary}</td>
+                    <td>£{TaxCalculator(emp.salary)}</td>
+                    <td>£{emp.salary - TaxCalculator(emp.salary)}</td>
+                    <td>{emp.department}</td>
                 </tr>
+                )
                 ) 
             }
+            </tbody>
         </table>
         </>
     );
