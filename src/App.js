@@ -5,15 +5,14 @@ import Subjects from './Components/Subjects'
 import Information from './Components/Information';
 import Addition from './Components/Addition';
 import Trainer from './Components/Trainer';
+import Payslip from './Components/Payslip';
 
 function App() {
-  let c = 10+30;
-  let d = 40 + 50;
 
 
   return (
     <>
-    <Information/>
+    {/**<Information/>
     <br/>
     <Address/>
     <br/>
@@ -23,8 +22,15 @@ function App() {
   <br/>
   <br/>
   <br/>
-  <Addition/>
-  <Trainer/>
+  <Addition num1="10" num2="30" operation="Add"/>
+  <Addition num1="30" num2="90" operation="Subtract"/>
+  <Addition num1="200" num2="50" operation="Divide"/>
+  <Addition num1="5" num2="20" operation="Multiply"/>
+  <br/>
+  <Trainer name1="Shafeeq" address1="Manchester"/>
+  <Trainer name1="PEter" address1="Glasgow"/>
+  <Trainer name1="Tadas" address1="London"/> */}
+  <Payslip name="Shafeeq" department="IT"address="Manchester" salary="2000"/>
     </>
   );
 }

@@ -1,13 +1,14 @@
 import Address from "./Address";
 
-function Trainer(){
+function Trainer(props){
+
 
     return(
         <>
             <br/>
-            <h1>Name: Shafeeq</h1>
+            <h1>Name: {props.name1}</h1>
             
-            <h2><Address/></h2>
+            <h2>Address: {props.address1}</h2>
         </>
     );
 }

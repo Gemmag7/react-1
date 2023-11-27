@@ -1,17 +1,29 @@
-function Addition(){
+function Addition(props){
 
-    let num1= 10 
-    let num2 = 20 
-    let result = num1 + num2;
+    let result =0
+    switch(props.operation){
+        case "Add": result = parseInt(props.num1) + parseInt(props.num2); break;
+        case "Subtract": result = parseInt(props.num1) - parseInt(props.num2); break;
+        case "Multiply": result = parseInt(props.num1) * parseInt(props.num2); break;
+        case "Divide": result = parseInt(props.num1) / parseInt(props.num2); break;
+        default:
+            result="100"
+    }
+    //let result = parseInt(props.num1) + parseInt(props.num2);
+    
     return(
 
         <>
-        First Number: <b>{num1}</b>
         <br/>
-        Second Number: <b>{num2}</b>
+        First Number: <b>{parseInt(props.num1)}</b>
         <br/>
-        The result of the addition is: <b>{result}</b>
-        </>
+        Second Number: <b>{props.num2}</b>
+        <br/>
+        The result of the {props.operation} is: <b>{result}</b>
+    </>
+
+    
+    
     );
 }
 
