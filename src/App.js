@@ -3,6 +3,8 @@ import './App.css';
 import Address from './Components/Address';
 import Subjects from './Components/Subjects'
 import Information from './Components/Information';
+import Addition from './Components/Addition';
+import Trainer from './Components/Trainer';
 
 function App() {
   let c = 10+30;
@@ -18,8 +20,11 @@ function App() {
     <br/>
     <br/>
     <Subjects/>
-    <h1> The total is: {c}</h1>
-    <h1> The total is : {d}</h1>
+  <br/>
+  <br/>
+  <br/>
+  <Addition/>
+  <Trainer/>
     </>
   );
 }

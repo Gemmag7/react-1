@@ -13,11 +13,11 @@ function Subjects(){
                 </tr>
                 <tr>
                     <td>2 </td>
-                    <td>Pythpn </td>
+                    <td>Python </td>
                 </tr>
                 <tr>
                     <td>3 </td>
-                    <td>JavaScript </td>
+                    <td>HTML </td>
                 </tr>
             </table>
         </>
