@@ -6,6 +6,7 @@ import Information from './Components/Information';
 import Addition from './Components/Addition';
 import Trainer from './Components/Trainer';
 import Payslip from './Components/Payslip';
+import Employees from './Components/Employees';
 
 function App() {
 
@@ -29,8 +30,9 @@ function App() {
   <br/>
   <Trainer name1="Shafeeq" address1="Manchester"/>
   <Trainer name1="PEter" address1="Glasgow"/>
-  <Trainer name1="Tadas" address1="London"/> */}
-  <Payslip name="Shafeeq" department="IT"address="Manchester" salary="2000"/>
+  <Trainer name1="Tadas" address1="London"/> 
+  <Payslip name="Shafeeq" department="IT"address="Manchester" salary="2000"/>*/}
+  <Employees/>
     </>
   );
 }

@@ -30,8 +30,8 @@ function TaxCalculator(props){
 
     return (
         <>
-        <h2>Tax: £{tax}</h2>
-        <h2>Net: £{net}</h2>
+        <h3>Tax: £{tax}</h3>
+        <h3>Net: £{net}</h3>
         <h3>Allowance: £{result}</h3>
         </>
     );

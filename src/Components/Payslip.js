@@ -8,10 +8,10 @@ function Payslip(props){
 
         <h1>Payslip</h1>
         <br/>
-        <h1>Name: <b>{props.name}</b></h1>
-        <h1>Department: <b>{props.department}</b></h1>
-        <h1>Address: <b>{props.address}</b></h1>
-        <h1>Salary: £<b>{props.salary}</b></h1>
+        <h2>Name: <b>{props.name}</b></h2>
+        <h2>Department: <b>{props.department}</b></h2>
+        <h2>Address: <b>{props.address}</b></h2>
+        <h2>Salary: £<b>{props.salary}</b></h2>
         <TaxCalculator {...props}/>
         </>
         
