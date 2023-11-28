@@ -17,7 +17,7 @@ function Comments(){
      function getData(){
         let id = document.getElementById("postID").value;
         let promiseRef = fetch(`http://jsonplaceholder.typicode.com/posts/${id}/comments`)
-        console.log(id)
+        
         promiseRef.then(done)
      }
 
@@ -36,7 +36,7 @@ function Comments(){
     </tr>
             
             {
-                comments.map( (X) =>
+                comments.map( (X) => 
                 <tr>
                     
                     <td>{X.postId}</td>

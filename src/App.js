@@ -10,6 +10,8 @@ import Employees from './Components/Employees';
 import Test from './Components/Test';
 import Posts from './Components/Posts';
 import Comments from './Components/Comments';
+import Effects from './Components/Effects';
+import EffectsTask from './Components/EffectsTask';
 
 function App() {
 
@@ -43,8 +45,10 @@ function App() {
   <Employees department="IT"/>
 
   <Test/>
-  <Posts />*/}
+  <Posts />
   <Comments/>
+  <Effects/>*/}
+  <EffectsTask/>
     </>
   );
 }
