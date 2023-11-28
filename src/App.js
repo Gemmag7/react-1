@@ -8,6 +8,7 @@ import Trainer from './Components/Trainer';
 import Payslip from './Components/Payslip';
 import Employees from './Components/Employees';
 import Test from './Components/Test';
+import Posts from './Components/Posts';
 
 function App() {
 
@@ -38,9 +39,10 @@ function App() {
   <br/>
   <br/>
   <h2>List of Employees working in IT department</h2>
-  <Employees department="IT"/>*/}
+  <Employees department="IT"/>
 
-  <Test/>
+  <Test/>*/}
+  <Posts />
     </>
   );
 }
