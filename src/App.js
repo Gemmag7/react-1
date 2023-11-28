@@ -9,6 +9,7 @@ import Payslip from './Components/Payslip';
 import Employees from './Components/Employees';
 import Test from './Components/Test';
 import Posts from './Components/Posts';
+import Comments from './Components/Comments';
 
 function App() {
 
@@ -41,8 +42,9 @@ function App() {
   <h2>List of Employees working in IT department</h2>
   <Employees department="IT"/>
 
-  <Test/>*/}
-  <Posts />
+  <Test/>
+  <Posts />*/}
+  <Comments/>
     </>
   );
 }
