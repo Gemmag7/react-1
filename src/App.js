@@ -7,6 +7,7 @@ import Addition from './Components/Addition';
 import Trainer from './Components/Trainer';
 import Payslip from './Components/Payslip';
 import Employees from './Components/Employees';
+import Test from './Components/Test';
 
 function App() {
 
@@ -38,7 +39,8 @@ function App() {
   <br/>
   <h2>List of Employees working in IT department</h2>
   <Employees department="IT"/>*/}
-  
+
+  <Test/>
     </>
   );
 }
