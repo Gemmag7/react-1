@@ -12,6 +12,7 @@ import Posts from './Components/Posts';
 import Comments from './Components/Comments';
 import Effects from './Components/Effects';
 import EffectsTask from './Components/EffectsTask';
+import UseEffectExample from './Components/useEffectExample';
 
 function App() {
 
@@ -47,8 +48,9 @@ function App() {
   <Test/>
   <Posts />
   <Comments/>
-  <Effects/>*/}
-  <EffectsTask/>
+  <Effects/>
+  <EffectsTask/>*/}
+  <UseEffectExample/>
     </>
   );
 }
